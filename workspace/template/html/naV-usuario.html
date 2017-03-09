@@ -1,0 +1,33 @@
+
+<div class="aside_usuario">
+    <ul>
+        <li><a href="?ruta=usuario&accion=viewusuario">Listar Usuarios</a></li>
+        <li><a href="?ruta=usuario&accion=viewadd">Añadir Nuevo Usuario</a></li>
+    </ul>
+</div>
+<hr/>
+<div class="aside_disco">
+    <div class="aside_disco_links">
+        <ul>
+            <li><a href="?ruta=disco&accion=viewlistadiscos">Listar Discos</a></li>
+            <li><a href="?ruta=disco&accion=viewadd">Añadir Nuevo Disco</a></li>
+            <li><a href="?ruta=disco&accion=viewlistadiscosTitulo">Ordenar por Título</a></li>
+            <li><a href="?ruta=disco&accion=viewlistadiscosAutor">Ordenar por Autor</a></li>
+        </ul>
+    </div>
+    
+    <div class="aside_disco_buscador">
+        <form class="aside_form">
+            <input type="hidden" name="ruta" value="disco" />
+            <input type="hidden" name="accion" value="viewsearch" />
+            
+            <input type="text" name="search" class="buscar" />
+            <input type="submit" class="buscar_submit" value="Buscar" />
+            
+            <div class="aside_disco_opciones">
+                <input type="radio" id="radio01" name="radio" value="titulo" checked="checked"><label for="radio01" class="checkbus">Titulo</label>
+                <input type="radio" id="radio02" name="radio" value="autor"><label for="radio02" class="checkbus">Autor</label>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,758 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    background-image: url("../img/appbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+    -webkit-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contenedor-datos{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    text-decoration: none;
+}
+
+
+.menu_aside{
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.6);
+    box-shadow: 1.5px 1px 1px 0px rgba(0,0,0,0.75);
+    flex: 0 1 20%;
+    flex-direction: column;
+}
+
+logoname{
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height:100%;
+}
+
+.container_form{
+    text-align: center;
+    width: 45%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+}
+
+.menu_pie {
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 83.3%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.container_aside{
+    margin: 20px 30px 20px 30px;
+}
+
+.aside_usuario{
+    margin: 10px 0px 20px;
+}
+
+.aside_usuario li{
+    padding: 10px 0px;
+}
+
+.aside_usuario a{
+    font-family: 'Satellite';
+    color: white;
+    font-size: 1.4em;
+}
+
+.aside_disco{
+    margin: 20px 0px;
+}
+
+.aside_disco_links li{
+    padding: 10px 0px;
+}
+
+.aside_disco_links a{
+    font-family: 'Satellite';
+    color: white;
+    font-size: 1.2em;
+    -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+
+.aside_disco_links a:hover{
+    color: red;
+    -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+
+.menu_logueo{
+    height: 55px;
+    align-items:center;
+    justify-content: flex-end;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1.5px 1px 1px 0px rgba(0,0,0,0.75);
+    flex-direction: row;
+    border-bottom: 1px solid silver;
+}
+
+.aside_logo{
+    margin: 0px 0px 20px 0px;
+}
+
+.aside_cerrarsesion a{
+    font-family: 'Satellite';
+    color: white;
+    font-size: 1.4em;
+}
+
+
+.left{
+    justify-content:center;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.right{
+    justify-content:center;
+    width: 50%;
+     align-items: flex-end;
+}
+
+.left a{
+   font-family: Raleway5;
+    color: red;
+    font-size: 1.5em; 
+}
+
+
+.right ul{
+    float: right;
+    margin-right: 5%;
+}
+
+.right a{
+   font-family: Raleway2;
+    color: #fff;
+    font-size: 1.2em; 
+    -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+
+.right a:hover{
+    font-family: Raleway;
+    color: red;
+    font-size: 1.2em;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+#nombreempresa{
+    margin-left: 5%;
+}
+
+hr{
+    color: silver !important;
+    background-color: silver !important;
+    height: 1px !important;
+}
+
+.aside_disco_buscador{
+    margin: 20px 0px;
+}
+
+.buscar{
+    padding: 5px;
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid silver;
+}
+
+.buscar_submit{
+    width: 100%;
+    height: 28px;
+    font-family: 'Satellite', sans-seri;
+    font-size: 1.1em;
+    margin: 8px 0px;
+    border: none;
+    color: red;
+    border:1px solid #151617;
+    
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    background-color: #45484d; background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000000));
+    background-image: -webkit-linear-gradient(top, #45484d, #000000);
+    background-image: -moz-linear-gradient(top, #45484d, #000000);
+    background-image: -ms-linear-gradient(top, #45484d, #000000);
+    background-image: -o-linear-gradient(top, #45484d, #000000);
+    background-image: linear-gradient(to bottom, #45484d, #000000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484d, endColorstr=#000000);
+    margin-bottom: 10px;
+}
+
+.buscar_submit:hover{
+     border:1px solid #682720; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+     background-color: #2d2f32; background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2f32), to(#1a1a1a));
+     background-image: -webkit-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -moz-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -ms-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -o-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: linear-gradient(to bottom, #2d2f32, #1a1a1a);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#2d2f32, endColorstr=#1a1a1a);
+     margin-bottom: 10px;
+}
+
+.log_input{
+    width: 90%;
+    height: 40px;
+    margin: 4px 10px;
+    padding: 8px;
+    border: none;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    font-family: Raleway3;
+    font-size: 1.3em;
+}
+
+input::-webkit-input-placeholder {
+    font-family: Raleway;
+    font-size: 1.2em;
+    padding-left: 8px;
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+.log_submit{
+    width: 90%;
+    height: 45px;
+    font-family: 'Satellite', sans-seri;
+    font-size: 1.1em;
+    margin: 8px 0px;
+    border: none;
+    color: red;
+    border:1px solid #151617;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    background-color: #45484d; background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000000));
+    background-image: -webkit-linear-gradient(top, #45484d, #000000);
+    background-image: -moz-linear-gradient(top, #45484d, #000000);
+    background-image: -ms-linear-gradient(top, #45484d, #000000);
+    background-image: -o-linear-gradient(top, #45484d, #000000);
+    background-image: linear-gradient(to bottom, #45484d, #000000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484d, endColorstr=#000000);
+    cursor: pointer;
+}
+
+.log_submit:hover{
+    border:1px solid #682720; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+     background-color: #2d2f32; background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2f32), to(#1a1a1a));
+     background-image: -webkit-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -moz-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -ms-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -o-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: linear-gradient(to bottom, #2d2f32, #1a1a1a);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#2d2f32, endColorstr=#1a1a1a);
+    cursor: pointer;
+}
+
+
+.add_submit{
+    width: 90%;
+    height: 45px;
+    font-family: 'Satellite', sans-seri;
+    font-size: 1.1em;
+    margin: 8px 0px;
+    border: none;
+    color: red;
+    border:1px solid #151617;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    background-color: #45484d; background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000000));
+    background-image: -webkit-linear-gradient(top, #45484d, #000000);
+    background-image: -moz-linear-gradient(top, #45484d, #000000);
+    background-image: -ms-linear-gradient(top, #45484d, #000000);
+    background-image: -o-linear-gradient(top, #45484d, #000000);
+    background-image: linear-gradient(to bottom, #45484d, #000000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484d, endColorstr=#000000);
+    cursor: pointer;
+}
+
+.add_submit:hover{
+    border:1px solid #682720; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+     background-color: #2d2f32; background-image: -webkit-gradient(linear, left top, left bottom, from(#2d2f32), to(#1a1a1a));
+     background-image: -webkit-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -moz-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -ms-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: -o-linear-gradient(top, #2d2f32, #1a1a1a);
+     background-image: linear-gradient(to bottom, #2d2f32, #1a1a1a);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#2d2f32, endColorstr=#1a1a1a);
+    cursor: pointer;
+}
+
+h1.titulo_form{
+    font-family: Satellite;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+/******** FIN FORMULARIO LOGIN ********/
+
+.tablaUsuarios{
+    border-collapse: collapse;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tablaUsuarios table{
+    border: 1px solid #A4A4A4;
+}
+
+th, td{
+    border: 1px solid #A4A4A4;
+    padding: 4px 20px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+th{
+    font-weight: bold !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family:  Raleway3 !important;
+}
+
+th p{
+    font-family:  Raleway3 !important;
+    font-size: 1.5em;
+    color: #FAFAFA;
+}
+
+td p{
+    font-family: 'Satellite';
+    font-size: 1.4em;
+    color: #FAFAFA;
+}
+
+td a{
+    font-family: 'Satellite';
+    font-size: 1.4em;
+    color: #FAFAFA;
+    font-style: oblique !important;
+}
+
+.elimUsuario{
+    font-family: Raleway2;
+    font-size: 1.3em;
+    color: red;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+
+.elimUsuario:hover{
+    font-family: Raleway2;
+    font-size: 1.3em;
+    color: red;
+    text-decoration: underline;
+    -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+
+.separadormenu{
+    background-color: 	#333333 !important;
+    color: 	#333333 !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.estructura-disco{
+    width: 130px;
+    margin: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+
+.estructura-disco:hover{
+   transform: scale(1.6);
+    background-color: rgba(0, 0, 0, 0.8);
+   -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    
+}
+
+.cont-img{
+    width: 135px;
+}
+
+.cont-img img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.cont-img img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+.cont-disco{
+    margin: 10px 0px 0px 0px;
+}
+
+.cont-disco h1{
+    font-family: Raleway2;
+    font-size: 1.2em;
+    color: red;
+    text-align: center;
+}
+
+.cont-disco h3{
+    font-family: 'Satellite';
+    font-size: 1.2em;
+    color: white;
+    font-style: oblique;
+    text-align: center;
+    font-weight: normal;
+    margin: 5px 5px 5px 0px ;
+}
+
+.menu-disco{
+    width: 100%;
+    bottom: 0;
+}
+
+.menu-disco ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-disco ul li a{
+    font-family: Raleway2;
+    font-size: 0.8em;
+    color: #A4A4A4;
+}
+
+
+.content-disco{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-album{
+    width: 50%;
+    
+}
+.content-album img{
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+}
+.content-album img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.content-album img{
+    object-fit: contain;
+}
+
+.content-descripcion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway2;
+}
+
+.content-descripcion h1{
+    font-size: 5em;
+    padding: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.content-descripcion h3{
+    font-size: 2.5em;
+    padding: 20px 0px;
+    font-weight: normal;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+/********** FORMULARIO ADD/EDIT DISCOS ******/
+
+.container_add, .container_edit{
+    text-align: center;
+    width: 45%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+}
+
+.cont-campos{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_input{
+    width: 90%;
+    height: 40px;
+    margin: 4px 10px;
+    padding: 8px;
+    border: none;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    font-family: Raleway3;
+    font-size: 1.3em;
+}
+
+.cont-subir{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_caratula{
+}
+
+.file_input{
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    margin: 4px 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color:silver;
+    color: black;
+    font-family: Raleway3;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+/********************** PAGINACIÓN **************/
+
+.pagin{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.navpag{
+    font-size:25px;
+    color: #fff;
+    font-family: Raleway5;
+     -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+}
+
+.navpag:hover{
+    font-size:25px;
+    color: red;
+    font-family: Raleway5;
+     -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+}
+
+
+.checkbus{
+    font-size:16px;
+    color: #fff;
+    font-family: Satellite;
+    margin: 10px
+}
+
+#radio01{
+  font-size:15px;
+    color: #fff;
+    font-family: Raleway5;  
+}
+
+#radio02{
+    font-size:15px;
+    color: #fff;
+    font-family: Raleway5;
+}
+
+/* ------------------SECCION DE FONTFACE-----------------*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fuentes/Raleway-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway2';
+    src: url('../fuentes/Raleway-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway3';
+    src: url('../fuentes/Raleway-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway4';
+    src: url('../fuentes/Raleway-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway5';
+    src: url('../fuentes/Raleway-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magna';
+    src: url('../fuentes/Magna-BlackCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satellite';
+    src: url('../fuentes/Satellite.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Voltaire';
+    src: url('../fuentes/Voltaire.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fuentes/LatoLatin-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fuentes/LatoLatin-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kilo';
+    src: url('../fuentes/KiloGram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Medium';
+    src: url('../fuentes/FuturaPTMedium.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('../fuentes/FuturaPTBook.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../fuentes/FuturaPTLight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

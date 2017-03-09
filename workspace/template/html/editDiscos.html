@@ -1,0 +1,26 @@
+<div class="container_edit">
+    <h1 class="titulo_form">Editar un disco</h1>
+    <form method='POST' enctype='multipart/form-data'>
+        <input type="hidden" name="ruta" value="disco" />
+        <input type="hidden" name="accion" value="doedit" />
+        <input type="hidden" name="idDisco" value="{idDisco}" />
+        <input type="hidden" name="idAutor" value="{idAutor}" />
+        
+        <div class="cont-campos">
+            <input type="text" id="add_login" class="add_input" name="title" value="{title}" placeholder="titulo" /><br/>
+            <input type="text" id="add_pass" class="add_input" name="autor" value="{autor}" placeholder="autor" /><br/>
+        </div>
+        
+        <div class="container_caratula">
+            <img src="" />
+        </div>
+        
+        <div class="cont-subir">
+            <input id="txt" type="text" class="file_input" value="Choose File" 
+       onclick ="javascript:document.getElementById('file').click();">
+          <input id="file" type="file" class="file_input" style='visibility: hidden;' name="path" onchange="ChangeText(this, 'txt');"/>
+        </div> 
+            
+        <input type="submit" value="Editar" class="add_submit" />
+    </form>
+</div>
